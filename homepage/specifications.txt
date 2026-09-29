@@ -1,0 +1,27 @@
+HTML Tags Used:
+1. <h1>
+2. <p>
+3. <a>
+4. <ul>
+5. <li>
+6. <button>
+7. <nav>
+8. <header>
+9. <section>
+10. <footer>
+
+CSS Selectors and Properties:
+1. body - font-family, background-color
+2. button - margin-top, padding, background-color, color, border, cursor
+3. header - text-align, margin
+4. nav - margin-bottom
+5. ul li - color, font-weight (through JavaScript)
+
+JavaScript:
+1. History Page: Toggle visibility of a fun fact.
+2. Rules Page: Highlight rules when a button is clicked.
+
+Bootstrap:
+1. Navbar on homepage and players page.
+2. Cards on players page for player profiles.
+3. Buttons styled using Bootstrap classes.

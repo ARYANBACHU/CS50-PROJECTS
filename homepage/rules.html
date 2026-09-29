@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules of Tennis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rules of Tennis</h1>
+        <nav>
+            <a href="index.html">Home</a> | <a href="history.html">History</a> | <a href="players.html">Players</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <ul>
+                <li>A match is played to the best of three or five sets.</li>
+                <li>Players alternate serves every game.</li>
+                <li>The first player to win six games wins the set.</li>
+            </ul>
+            <button id="highlightBtn">Highlight Rules</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Love for Tennis. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("highlightBtn").addEventListener("click", function () {
+            const items = document.querySelectorAll("ul li");
+            items.forEach(item => {
+                item.style.color = "blue";
+                item.style.fontWeight = "bold";
+            });
+        });
+    </script>
+</body>
+</html>
