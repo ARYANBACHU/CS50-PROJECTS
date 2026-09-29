@@ -1,0 +1,3 @@
+A person audio aura would be figured through the average of the danceabily, energy and valence of the songs they listen to. Thos with higher avaergae will have a happier modd while those with lower will have a sadder mood.
+
+A few songs with extreme valuse could skew the averages or if a listener listen to one specific songs repetively it could inflate the value of its mood characteristics.

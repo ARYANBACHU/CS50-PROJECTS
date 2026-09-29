@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: When telling 1 to sort an already sorted list with 50000 elements, it does it faster then a random list with the same number of elements suggesting its bubble sort.
+
+sort2 uses: Merge Sort
+
+How do you know?: It sorts large inputs the fastest suggesting its merge sort.
+
+sort3 uses: Selection Sort
+
+How do you know?: It performs consistenly regardless of input order suggesting its selection sort.

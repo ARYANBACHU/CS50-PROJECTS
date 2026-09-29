@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            function checkMCQ(event) {
+                let b = event.target;
+                if (b.innerHTML == 'Mars') {
+                    b.style.backgroundColor = 'Green';
+                    b.parentElement.querySelector('.feedback').innerHTML = 'Correct!';
+                }
+                else {
+                    b.style.backgroundColor = 'Red';
+                    b.parentElement.querySelector('.feedback').innerHTML = 'Incorrect';
+                }
+            }
+
+            function checkFRQ(event) {
+                let b = event.target;
+                let input = b.parentElement.querySelector('input');
+                if (input.value === 'United Arab Emirates') {
+                    input.style.backgroundColor = 'Green';
+                    input.parentElement.querySelector('.feedback').innerHTML = 'Correct!';
+                }
+                else {
+                    input.style.backgroundColor = 'Red';
+                    input.parentElement.querySelector('.feedback').innerHTML = 'Incorrect';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Which planet in our solar system is known as the red planet?</h3>
+                <button onclick="checkMCQ(event)">Earth</button>
+                <button onclick="checkMCQ(event)">Venus</button>
+                <button onclick="checkMCQ(event)">Jupiter</button>
+                <button onclick="checkMCQ(event)">Mars</button>
+                <button onclick="checkMCQ(event)">Mercury</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>Which country has the most powerful passport?</h3>
+                <input type="text"></input>
+                <button onclick="checkFRQ(event)">Check Answer</button>
+                <p class="feedback"></p>
+            </div>
+        </div>
+    </body>
+</html>
